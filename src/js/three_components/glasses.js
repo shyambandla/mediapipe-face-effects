@@ -26,12 +26,12 @@ export class Glasses {
   }
 
   async loadGlasses() {
-    this.glasses = await loadModel( `${PUBLIC_PATH}/3d/black-glasses/scene.gltf` );
+    this.glasses = await loadModel( `${PUBLIC_PATH}/3d/black-glasses/glasses2.gltf` );
 
     // scale glasses
     const bbox = new THREE.Box3().setFromObject(this.glasses);
     const size = bbox.getSize(new THREE.Vector3());
-    this.scaleFactor = size.x;
+    this.scaleFactor = size.x*0.9;
 
     this.glasses.name = 'glasses';
   }

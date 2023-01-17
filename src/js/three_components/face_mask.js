@@ -43,14 +43,14 @@ export class FaceMask {
   }
 
   update() {
-    if (this.needsUpdate) {
-      if (this.faces != null) {
-        this.removeFaces();
-      }
-      if (this.landmarks != null) {
-        this.addFaces();
-      }
-      this.needsUpdate = false;
-    }
+    // if (this.needsUpdate) {
+    //   if (this.faces != null) {
+    //     this.removeFaces();
+    //   }
+    //   if (this.landmarks != null) {
+    //     this.addFaces();
+    //   }
+    //   this.needsUpdate = false;
+    // }
   }
 }
